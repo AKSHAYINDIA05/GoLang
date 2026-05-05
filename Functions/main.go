@@ -1,15 +1,21 @@
-//package main
+package main
 
-//import "fmt"
+import "fmt"
 
 //func add(x int, y int) int {
 //	return x + y
 //}
-//
-//func main() {
-//	result := add(2, 4)
-//	fmt.Printf("Result : %v\n", result)
-//}
+
+// The above add function can be rewritten as the below
+
+func add(x, y int) int {
+	return x + y
+}
+
+func main() {
+	result := add(2, 4)
+	fmt.Printf("Result : %v\n", result)
+}
 
 //Assignment
 //We often will need to manipulate strings in our messaging app.
@@ -17,22 +23,22 @@
 //The concat function should take two strings and smash them together.
 //hello + world = helloworld
 
-package main
-
-import "fmt"
-
-func concat(s1 string, s2 string) string {
-	return s1 + s2
-}
-
-// don't touch below this line
-
-func main() {
-	test("Lane,", " happy birthday!")
-	test("Zuck,", " hope that Metaverse thing works out")
-	test("Go", " is fantastic")
-}
-
-func test(s1 string, s2 string) {
-	fmt.Println(concat(s1, s2))
-}
+//package main
+//
+//import "fmt"
+//
+//func concat(s1 string, s2 string) string {
+//	return s1 + s2
+//}
+//
+//// don't touch below this line
+//
+//func main() {
+//	test("Lane,", " happy birthday!")
+//	test("Zuck,", " hope that Metaverse thing works out")
+//	test("Go", " is fantastic")
+//}
+//
+//func test(s1 string, s2 string) {
+//	fmt.Println(concat(s1, s2))
+//}
